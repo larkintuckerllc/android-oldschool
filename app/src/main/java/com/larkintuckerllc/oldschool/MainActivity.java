@@ -33,9 +33,9 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
         ListView lvTodos = findViewById(R.id.lvTodos);
+        // PERSIST
         mTodoDbHelper = new TodoDbHelper(this);
         ArrayList<Todo> todos = new ArrayList<Todo>();
-        // PERSIST
         SQLiteDatabase db = mTodoDbHelper.getReadableDatabase();
         Cursor cursor = db.query(TodoContract.TodoEntry.TABLE,
                 new String[]{
@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         // VIEW
         mTodosAdapter =
             new TodosAdapter(this, todos);
-        lvTodos.setAdapter(mTodosAdapter);
+        lvTodos.setAdapter(mTodosAdapter)    private ArrayList<Todo> mTodos;;
     }
 
     @Override

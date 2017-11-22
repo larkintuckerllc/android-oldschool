@@ -1,8 +1,6 @@
 package com.larkintuckerllc.oldschool;
 
 
-import android.support.annotation.NonNull;
-
 public class Todo {
 
     private long mId;
