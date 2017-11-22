@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         // VIEW
         mTodosAdapter =
             new TodosAdapter(this, todos);
-        lvTodos.setAdapter(mTodosAdapter)    private ArrayList<Todo> mTodos;;
+        lvTodos.setAdapter(mTodosAdapter);
     }
 
     @Override
